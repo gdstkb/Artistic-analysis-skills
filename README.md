@@ -40,33 +40,6 @@ cp -R ./<your-repo>/game-art-competitive-analysis ~/.codex/skills/
 使用 $game-art-competitive-analysis 分析这些竞品截图。
 ```
 
-## 使用说明
-
-完整使用说明见：
-
-[game-art-competitive-analysis/README.md](game-art-competitive-analysis/README.md)
-
-## 发布到 GitHub
-
-如果这是一个新仓库，推荐流程：
-
-```powershell
-git init
-git add README.md .gitignore game-art-competitive-analysis
-git commit -m "Add game art competitive analysis skill"
-git branch -M main
-git remote add origin https://github.com/<your-github-user>/<your-repo>.git
-git push -u origin main
-```
-
-如果本地仓库已经存在，只需要添加远程仓库并推送：
-
-```powershell
-git remote add origin https://github.com/<your-github-user>/<your-repo>.git
-git add README.md .gitignore game-art-competitive-analysis
-git commit -m "Add game art competitive analysis skill"
-git push -u origin main
-```
 
 推送前请确认不要提交 `reports/` 目录。
 =======
