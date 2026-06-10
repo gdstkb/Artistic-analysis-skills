@@ -1,0 +1,1 @@
+# Artistic-analysis-skills
