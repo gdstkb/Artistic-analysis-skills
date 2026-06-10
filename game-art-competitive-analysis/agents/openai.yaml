@@ -1,0 +1,4 @@
+interface:
+  display_name: "Game Art Competitive Analysis"
+  short_description: "Game art competitor analysis"
+  default_prompt: "Use $game-art-competitive-analysis to analyze these competitor game screenshots and produce a complete Markdown report with color structure, adjustment guidance, and AI art prompts."
