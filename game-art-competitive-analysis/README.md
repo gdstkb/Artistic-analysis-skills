@@ -147,28 +147,42 @@ input/
 
 ## 安装方法
 
-如果这个 skill 来自 GitHub 仓库，可以按下面方式安装。
+### Quickstart（30 秒安装）
 
-### Windows PowerShell
-
-```powershell
-git clone https://github.com/<your-github-user>/<your-repo>.git
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
-Copy-Item -Recurse -Force ".\<your-repo>\game-art-competitive-analysis" "$env:USERPROFILE\.codex\skills\"
-```
-
-### macOS / Linux
+1. 运行 skills.sh 安装器：
 
 ```bash
-git clone https://github.com/<your-github-user>/<your-repo>.git
-mkdir -p ~/.codex/skills
-cp -R ./<your-repo>/game-art-competitive-analysis ~/.codex/skills/
+npx skills@latest add gdstkb/Artistic-analysis-skills
 ```
 
-安装后重启 Codex，或开启一个新会话，然后调用：
+2. 选择要安装的 skill：`game-art-competitive-analysis`。
+
+3. 选择要安装到的 coding agent，例如 Codex。
+
+4. 重启 Codex，或开启一个新会话，然后调用：
 
 ```text
 使用 $game-art-competitive-analysis 分析这些竞品截图。
 ```
 
-如果仓库根目录本身就是 `game-art-competitive-analysis` skill 文件夹，则复制仓库根目录到 `~/.codex/skills/game-art-competitive-analysis` 即可。
+### 手动安装
+
+如果无法使用 `npx skills@latest`，可以从 GitHub 仓库手动复制到本地 skills 目录。
+
+#### Windows PowerShell
+
+```powershell
+git clone https://github.com/gdstkb/Artistic-analysis-skills.git
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
+Copy-Item -Recurse -Force ".\Artistic-analysis-skills\game-art-competitive-analysis" "$env:USERPROFILE\.codex\skills\"
+```
+
+#### macOS / Linux
+
+```bash
+git clone https://github.com/gdstkb/Artistic-analysis-skills.git
+mkdir -p ~/.codex/skills
+cp -R ./Artistic-analysis-skills/game-art-competitive-analysis ~/.codex/skills/
+```
+
+如果只需要安装单个 skill，请确认最终目录是 `~/.codex/skills/game-art-competitive-analysis`。
