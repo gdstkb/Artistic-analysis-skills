@@ -30,8 +30,8 @@
 
 ```text
 reports/
-  arrow_kinesic_paths_art_analysis_report.md
-  arrow_kinesic_paths_images/
+  gamename_art_analysis_report.md
+  ganename_images/
     C01-gameplay.png
     C02-congratulations-cashout.png
     C03-extra-rewards.png
